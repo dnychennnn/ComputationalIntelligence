@@ -1,0 +1,36 @@
+2.2.1.2
+[degree = 1, iter = 20]
+train_error 0.481175209668
+test_error 0.41764888195
+
+[degree = 1, iter = 2000]
+train_err 0.469183152038
+test_err 0.38723499018
+
+2.2.1.3
+[degree=2, eta=.15]
+train_error 0.470157708
+test_error 0.398262125996
+
+[degree=2, eta=1.5]
+train_error 0.449762005948
+test_error 0.355108382379
+
+[degree=2, eta=15.]
+train_error 0.599055075094
+test_error 0.50827831846
+
+2.2.1.4
+1: 
+	2000, 1.5 => train_error 0.469183152038, test_error 0.38723499018
+2:
+	
+	2000, 1.5 => train_error 0.44965792436, test_error 0.353774759382
+	
+5:
+	2000, .15 => train_error 0.372761775726, test_error 0.323048966186
+	
+15: 
+	2000, 1.5 => train_error 0.316994838418, test_error 0.3662799827
+
+
