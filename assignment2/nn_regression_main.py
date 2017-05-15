@@ -54,7 +54,7 @@ def main():
     # ex_1_1_c(x_train, x_test, y_train, y_test)
 
     # 1.1 d)
-    # ex_1_1_d(x_train, x_test, y_train, y_test)
+    ex_1_1_d(x_train, x_test, y_train, y_test)
 
     ## 1.2 a)
     # ex_1_2_a(x_train, x_test, y_train, y_test)
@@ -67,7 +67,7 @@ def main():
     # ex_1_2_b(x_train_noisy, x_test, y_train_noisy, y_test)
 
     ## 1.2 c)
-    ex_1_2_c(x_train, x_test, y_train, y_test)
+    # ex_1_2_c(x_train, x_test, y_train, y_test)
 
 
 if __name__ == '__main__':

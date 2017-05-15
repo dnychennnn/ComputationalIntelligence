@@ -136,15 +136,17 @@ def ex_1_1_d(x_train, x_test, y_train, y_test):
 
     for idx, n_hidden_neuron in enumerate(n_hidden_neurons):
         # set the warm_start to True and max_iter to 1
-        nn = MLPRegressor(activation='logistic', solver='adam', hidden_layer_sizes=(n_hidden_neuron, ), alpha=0, max_iter=1, warm_start=True)  
+        nn = MLPRegressor(activation='logistic', solver='lbfgs', hidden_layer_sizes=(n_hidden_neuron, ), alpha=0, max_iter=1, warm_start=True)  
         for i in range(1000):
             nn.fit(x_train, y_train)
             train_mse = calculate_mse(nn, x_train, y_train)
             test_mse = calculate_mse(nn, x_test, y_test)
             train_mses[idx][i] = train_mse
             test_mses[idx][i] = test_mse
-            print('training mse: ', train_mse, '\t', 'testing mse: ', test_mse)
-    plot_mse_vs_neurons(train_mses, test_mses, n_hidden_neurons)
+            # print('training mse: ', train_mse, '\t', 'testing mse: ', test_mse)
+
+    plot_mse_vs_iterations(train_mses, test_mses, 1000, n_hidden_neurons)
+
     ## TODO
     pass
 
